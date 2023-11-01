@@ -1,2 +1,0 @@
-# Yoonus
-Computer 
