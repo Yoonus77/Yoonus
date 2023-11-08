@@ -57,3 +57,15 @@ ul li a{
 ul li a:hover{
           color: #ff7200;
 }
+
+.search{
+    width:330px;
+    float:left;
+    margin-left:270px;
+}
+
+.srch{
+    font-family: 'Time New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
