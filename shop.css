@@ -131,10 +131,12 @@ selection#hero{
   font-size: 3rem;
   margin-bottom: 1rem;
   color: #ff7200;
+  -webkit-text-stroke: 3px #000;
 }
 #hero p{
    font:arieal;
    color:#ff7200;
+   -webkit-text-stroke: 3px #000;
 }
 
 
