@@ -124,11 +124,17 @@ selection#hero{
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #ff7200;
+  color: #fff;
 }
 
 #hero h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
+  color: #ff7200;
 }
+#hero p{
+   font:arieal;
+   color:#ff7200;
+}
+
 
