@@ -1,26 +1,69 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-COMPATIBLE" contents="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link 
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer"
+      />
+    <link rel="stylesheet" href="shop.css">
   </head>
-<body>
-  <div class="main">
-    <div class="navbar">
-      <div class="icon">
-         <h2 class="logo">KareemZ</h2>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo"><a href="#">KAREEMZ</a></div>
+        <ul class="links">
+          <li><a href="hero">HOME</a></li>
+          <li><a href="about">ABOUT</a></li>
+          <li><a href="services">SERVICE</a></li>
+          <li><a href="contact">CONTACT</a></li>
+        </ul>
+        <a href="#" class="action_btn">Get Started</a
+        <div class="toggle_btn"></div>
+       <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    
+     <div class="dropdown_menu">
+       <li><a href="hero">HOME</a></li>
+          <li><a href="about">ABOUT</a></li>
+          <li><a href="services">SERVICE</a></li>
+          <li><a href="contact">CONTACT</a></li>
+          <li><a href="#" class="action_btn">Get Started</a></li>
      </div>
+    </header>
+    
+    <main>
+      <selection id="hero">
+        <h1>Welcome</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetuer <br />adipisicing elit. Aliquam atque.
+          </p>
+      </selection>
+      </main>
       
-    </div class="menu">   
-       <ul>
-           <li><a href="index.html">home</a></li>
-           <li><a href="service.html">service</a></li>
-           <li><a href="about.html">about</a></li>
-       </ul>
-  </div>
-  <div class="search"> 
-      <input class="srch" type="search" name="" placeholder="Type To text">
-      <a href="#"><button class="btn">search</button></a>
-<center><h1><u>KAREEMSTORE<H1></u> </center>
-<center><img style="width:300px;"src="km4.jpg"></center><br>
-<center><a style="background-color:red;color:white;padding:5px 10px 5px 10px;" href="shop.html">BUY NOW</a></center>
+      
+    <script>
+    const toggleBtn = document.querySelector('.toggle_btn')
+    const toggleBtnIcon = document.querySelector('.toggle_btn i')
+    const dropDownMenu = document.querySelector('.dropdown_menu')
+    
+    toggleBtn.onclick = function() {
+      dropDownMenu.classList.toggle('open')
+      const isOpen = dropDownMenu.classList.contains('open')
+      
+      
+      toggleBtnIcon.classList = isOpen
+      ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+    }
+  
+    
+    </script>
   </body>
-  </html>
+       </html>
