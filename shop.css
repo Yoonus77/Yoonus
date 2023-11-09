@@ -1,54 +1,190 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-COMPATIBLE" contents="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link 
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
-      crossorigin="anonymous" 
-      referrerpolicy="no-referrer"
-      />
-    <link rel="stylesheet" href="shop.css">
-  </head>
-  <body>
-    <header>
-      <div class="navbar">
-        <div class="logo"><a href="#">KareemZ</a></div>
-        <ul class="links">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="service.html">SERVICE</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-        <a href="shop.html" class="action_btn">Get Started</a
-        <div class="toggle_btn"></div>
-       <i class="fa-solid fa-bars"></i>
-      </div>
-    </div>
-    
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family:'Open Sans' sans-serif;
+}
+ 
+body {
+  height: 100vh;
+  background-color: #000;
+  background-image: url(img.jpg);
+  background-size: cover;
+  background-position: center;
+}
 
-    </header>
-    
-    <main>
-      <selection id="hero">
-        <h1>Welcome</h1>
-        <p>
-          Enjoy your awesome experience<br />
-          In this Ecommerce Website
-        </p>
-      <script>
-        navbar = document.querySelector(".navbar");
-        navbar.onlclick = function() {  
-          navbar=document.querySelector(".navbar")
-          navbar.classList.toggle(".active");
-          toggleBtnIcon.classList =isOpen
-          ? 'fa-solid fa-xmark'
-          : 'fa-solid fa-bars'
-        }
-      </script>
-    </main>
-  </body>
-</html>
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem; 
+}
+
+a:hover {
+  color:orange;
+}
+/* HEADER */
+header {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar .toggle_btn {
+  color: #fff;
+  font-size: 1.5 rem;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family:'Open Sans' sans-serif;
+}
+ 
+body {
+  height: 100vh;
+  background-color: #000;
+  background-image: url(img.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem; 
+}
+
+a:hover {
+  color:orange;
+}
+/* HEADER */
+header {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar .toggle_btn {
+  color: #fff;
+  font-size: 1.5 rem;
+  cursor: pointer;
+  display:none;
+}
+
+.action_btn {
+  background-color: orange;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+}
+
+.action_btn:hover {
+  scale: 1.05;
+  color: #fff;
+}
+
+.action_btn:active {
+  scale: 0.95;
+}
+
+/* DROPDOWN MENU */
+.dropdown_menu {
+  display:none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+}
+
+.navbar.active{
+  height: 450px
+}
+
+.dropdown_menu.open{
+  height: 240px;
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown_menu .action_btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* HERO */
+selection#hero{
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
