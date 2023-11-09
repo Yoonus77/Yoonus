@@ -1,12 +1,54 @@
-<html>
-  <body>
-<center><img style="width:200px;" src="km.jpg"><br>
-<center><a style="padding:15;" href="index.html">home</a>
-<a style="padding:15;"href="service.html">service</a>
-<a style="padding:15;" href="about.html">about</a></center><br>
-<center><u><h1 style="width:300px;">SERVICE</h1></center></u><br>
-<center><b><p>Items such as pens, pencils, crayons, notebook, punching machine, calculators, colour pencils, staplers, graph books and more are available at Kilakarai Kareem Stores.</p></b>
-<center><img style="width:50%;" src="km5.jpg">
 
-</body>
-  </html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-COMPATIBLE" contents="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link 
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer"
+      />
+    <link rel="stylesheet" href="shop.css">
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo"><a href="#">KareemZ</a></div>
+        <ul class="links">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="service.html">SERVICE</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <a href="shop.html" class="action_btn">Get Started</a
+        <div class="toggle_btn"></div>
+       <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+    
+
+    </header>
+    
+    <main>
+      <selection id="hero">
+        <h1>Service</h1>
+        <p>
+          <p>Items such as pens, pencils, crayons, notebook, punching machine, calculators, colour pencils, staplers, graph books and more are available at Kilakarai Kareem Stores.
+        </p>
+      <script>
+        navbar = document.querySelector(".navbar");
+        navbar.onlclick = function() {  
+          navbar=document.querySelector(".navbar")
+          navbar.classList.toggle(".active");
+          toggleBtnIcon.classList =isOpen
+          ? 'fa-solid fa-xmark'
+          : 'fa-solid fa-bars'
+        }
+      </script>
+    </main>
+  </body>
+</html>
