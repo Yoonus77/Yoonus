@@ -7,8 +7,7 @@
  
 body {
   height: 100vh;
-  background-color: #000;
-  background-image: url(img.jpg);
+  background: url(img.jpg);no-repeat;
   background-size: cover;
   background-position: center;
 }
