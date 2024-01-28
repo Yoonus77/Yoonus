@@ -36,13 +36,16 @@ background-color:black;
 }
 
 .nav a{
-  
+  float:left;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: ;
+flex-wrap:wrap;
+   flex-basis:auto;
+
 }
 .nav a{
- background-color:black;
+ background-color: black;
 padding:7px;
 
    
