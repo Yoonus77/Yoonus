@@ -43,8 +43,8 @@ background-color:black;
   display: flex;
   align-items: center;
   justify-content: ;
-flex-wrap:wrap;
-   flex-basis:auto;
+flex-wrap:no-wrap;
+   
 
 }
 .nav a{
