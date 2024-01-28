@@ -28,7 +28,8 @@ a:hover {
 }
 /* HEADER */
 .header {
-background-color:transparent;
+background-color:black;
+   padding:8px;
    
 }
 
